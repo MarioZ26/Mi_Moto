@@ -27,7 +27,7 @@ $.extend( $.ui, {
 		END: 35,
 		ENTER: 13,
 		ESCAPE: 27,
-		HOME: 36,
+		Inicio: 36,
 		LEFT: 37,
 		NUMPAD_ADD: 107,
 		NUMPAD_DECIMAL: 110,
@@ -1204,7 +1204,7 @@ $.widget("ui.draggable", $.ui.mouse, {
 
 	_mouseStop: function(event) {
 
-		//If we are using droppables, inform the manager about the drop
+		//If we are using droppables, inform the manager Sobre Nosotros the drop
 		var dropped = false;
 		if ($.ui.ddmanager && !this.options.dropBehaviour)
 			dropped = $.ui.ddmanager.drop(this, event);
@@ -3474,7 +3474,7 @@ $.widget("ui.sortable", $.ui.mouse, {
 		}
 
 		//Post events to containers
-		this._contactContainers(event);
+		this._ContactoContainers(event);
 
 		//Interconnect with droppables
 		if($.ui.ddmanager) $.ui.ddmanager.drag(this, event);
@@ -3491,7 +3491,7 @@ $.widget("ui.sortable", $.ui.mouse, {
 
 		if(!event) return;
 
-		//If we are using droppables, inform the manager about the drop
+		//If we are using droppables, inform the manager Sobre Nosotros the drop
 		if ($.ui.ddmanager && !this.options.dropBehaviour)
 			$.ui.ddmanager.drop(this, event);
 
@@ -3844,7 +3844,7 @@ $.widget("ui.sortable", $.ui.mouse, {
 
 	},
 
-	_contactContainers: function(event) {
+	_ContactoContainers: function(event) {
 
 		// get innermost container that intersects with item
 		var innermostContainer = null, innermostIndex = null;
@@ -5758,7 +5758,7 @@ $.widget( "ui.accordion", {
 			case keyCode.ENTER:
 				this._eventHandler( event );
 				break;
-			case keyCode.HOME:
+			case keyCode.Inicio:
 				toFocus = this.headers[ 0 ];
 				break;
 			case keyCode.END:
@@ -7759,43 +7759,43 @@ $.extend(Datepicker.prototype, {
 						break; // hide on escape
 				case 33: $.datepicker._adjustDate(event.target, (event.ctrlKey ?
 							-$.datepicker._get(inst, 'stepBigMonths') :
-							-$.datepicker._get(inst, 'stepMonths')), 'M');
+							-$.datepicker._get(inst, 'stepMonths')), 'M.M');
 						break; // previous month/year on page up/+ ctrl
 				case 34: $.datepicker._adjustDate(event.target, (event.ctrlKey ?
 							+$.datepicker._get(inst, 'stepBigMonths') :
-							+$.datepicker._get(inst, 'stepMonths')), 'M');
+							+$.datepicker._get(inst, 'stepMonths')), 'M.M');
 						break; // next month/year on page down/+ ctrl
 				case 35: if (event.ctrlKey || event.metaKey) $.datepicker._clearDate(event.target);
 						handled = event.ctrlKey || event.metaKey;
 						break; // clear on ctrl or command +end
 				case 36: if (event.ctrlKey || event.metaKey) $.datepicker._gotoToday(event.target);
 						handled = event.ctrlKey || event.metaKey;
-						break; // current on ctrl or command +home
-				case 37: if (event.ctrlKey || event.metaKey) $.datepicker._adjustDate(event.target, (isRTL ? +1 : -1), 'D');
+						break; // current on ctrl or command +Inicio
+				case 37: if (event.ctrlKey || event.metaKey) $.datepicker._adjustDate(event.target, (isRTL ? +1 : -1), 'M.M');
 						handled = event.ctrlKey || event.metaKey;
 						// -1 day on ctrl or command +left
 						if (event.originalEvent.altKey) $.datepicker._adjustDate(event.target, (event.ctrlKey ?
 									-$.datepicker._get(inst, 'stepBigMonths') :
-									-$.datepicker._get(inst, 'stepMonths')), 'M');
+									-$.datepicker._get(inst, 'stepMonths')), 'M.M');
 						// next month/year on alt +left on Mac
 						break;
-				case 38: if (event.ctrlKey || event.metaKey) $.datepicker._adjustDate(event.target, -7, 'D');
+				case 38: if (event.ctrlKey || event.metaKey) $.datepicker._adjustDate(event.target, -7, 'M.M');
 						handled = event.ctrlKey || event.metaKey;
 						break; // -1 week on ctrl or command +up
-				case 39: if (event.ctrlKey || event.metaKey) $.datepicker._adjustDate(event.target, (isRTL ? -1 : +1), 'D');
+				case 39: if (event.ctrlKey || event.metaKey) $.datepicker._adjustDate(event.target, (isRTL ? -1 : +1), 'M.M');
 						handled = event.ctrlKey || event.metaKey;
 						// +1 day on ctrl or command +right
 						if (event.originalEvent.altKey) $.datepicker._adjustDate(event.target, (event.ctrlKey ?
 									+$.datepicker._get(inst, 'stepBigMonths') :
-									+$.datepicker._get(inst, 'stepMonths')), 'M');
+									+$.datepicker._get(inst, 'stepMonths')), 'M.M');
 						// next month/year on alt +right
 						break;
-				case 40: if (event.ctrlKey || event.metaKey) $.datepicker._adjustDate(event.target, +7, 'D');
+				case 40: if (event.ctrlKey || event.metaKey) $.datepicker._adjustDate(event.target, +7, 'M.M');
 						handled = event.ctrlKey || event.metaKey;
 						break; // +1 week on ctrl or command +down
 				default: handled = false;
 			}
-		else if (event.keyCode == 36 && event.ctrlKey) // display the date picker on ctrl+home
+		else if (event.keyCode == 36 && event.ctrlKey) // display the date picker on ctrl+Inicio
 			$.datepicker._showDatepicker(this);
 		else {
 			handled = false;
@@ -8067,7 +8067,7 @@ $.extend(Datepicker.prototype, {
 			return;
 		}
 		this._adjustInstDate(inst, offset +
-			(period == 'M' ? this._get(inst, 'showCurrentAtPos') : 0), // undo positioning
+			(period == 'M.M' ? this._get(inst, 'showCurrentAtPos') : 0), // undo positioning
 			period);
 		this._updateDatepicker(inst);
 	},
@@ -8095,8 +8095,8 @@ $.extend(Datepicker.prototype, {
 	_selectMonthYear: function(id, select, period) {
 		var target = $(id);
 		var inst = this._getInst(target[0]);
-		inst['selected' + (period == 'M' ? 'Month' : 'Year')] =
-		inst['draw' + (period == 'M' ? 'Month' : 'Year')] =
+		inst['selected' + (period == 'M.M' ? 'Month' : 'Year')] =
+		inst['draw' + (period == 'M.M' ? 'Month' : 'Year')] =
 			parseInt(select.options[select.selectedIndex].value,10);
 		this._notifyChange(inst);
 		this._adjustDate(target);
@@ -8267,8 +8267,8 @@ $.extend(Datepicker.prototype, {
 					case 'd':
 						day = getNumber('d');
 						break;
-					case 'D':
-						getName('D', dayNamesShort, dayNames);
+					case 'M.M':
+						getName('M.M', dayNamesShort, dayNames);
 						break;
 					case 'o':
 						doy = getNumber('o');
@@ -8276,8 +8276,8 @@ $.extend(Datepicker.prototype, {
 					case 'm':
 						month = getNumber('m');
 						break;
-					case 'M':
-						month = getName('M', monthNamesShort, monthNames);
+					case 'M.M':
+						month = getName('M.M', monthNamesShort, monthNames);
 						break;
 					case 'y':
 						year = getNumber('y');
@@ -8334,14 +8334,14 @@ $.extend(Datepicker.prototype, {
 
 	/* Standard date formats. */
 	ATOM: 'yy-mm-dd', // RFC 3339 (ISO 8601)
-	COOKIE: 'D, dd M yy',
+	COOKIE: 'M.M, dd M.M yy',
 	ISO_8601: 'yy-mm-dd',
-	RFC_822: 'D, d M y',
-	RFC_850: 'DD, dd-M-y',
-	RFC_1036: 'D, d M y',
-	RFC_1123: 'D, d M yy',
-	RFC_2822: 'D, d M yy',
-	RSS: 'D, d M y', // RFC 822
+	RFC_822: 'M.M, d M.M y',
+	RFC_850: 'DD, dd-M.M-y',
+	RFC_1036: 'M.M, d M.M y',
+	RFC_1123: 'M.M, d M.M yy',
+	RFC_2822: 'M.M, d M.M yy',
+	RSS: 'M.M, d M.M y', // RFC 822
 	TICKS: '!',
 	TIMESTAMP: '@',
 	W3C: 'yy-mm-dd', // ISO 8601
@@ -8355,11 +8355,11 @@ $.extend(Datepicker.prototype, {
 	   dd - day of month (two digit)
 	   o  - day of year (no leading zeros)
 	   oo - day of year (three digit)
-	   D  - day name short
+	   M.M  - day name short
 	   DD - day name long
 	   m  - month of year (no leading zero)
 	   mm - month of year (two digit)
-	   M  - month name short
+	   M.M  - month name short
 	   MM - month name long
 	   y  - year (two digit)
 	   yy - year (four digit)
@@ -8416,8 +8416,8 @@ $.extend(Datepicker.prototype, {
 						case 'd':
 							output += formatNumber('d', date.getDate(), 2);
 							break;
-						case 'D':
-							output += formatName('D', date.getDay(), dayNamesShort, dayNames);
+						case 'M.M':
+							output += formatName('M.M', date.getDay(), dayNamesShort, dayNames);
 							break;
 						case 'o':
 							output += formatNumber('o',
@@ -8426,8 +8426,8 @@ $.extend(Datepicker.prototype, {
 						case 'm':
 							output += formatNumber('m', date.getMonth() + 1, 2);
 							break;
-						case 'M':
-							output += formatName('M', date.getMonth(), monthNamesShort, monthNames);
+						case 'M.M':
+							output += formatName('M.M', date.getMonth(), monthNamesShort, monthNames);
 							break;
 						case 'y':
 							output += (lookAhead('y') ? date.getFullYear() :
@@ -8474,7 +8474,7 @@ $.extend(Datepicker.prototype, {
 					case 'd': case 'm': case 'y': case '@':
 						chars += '0123456789';
 						break;
-					case 'D': case 'M':
+					case 'M.M': case 'M.M':
 						return null; // Accept anything
 					case "'":
 						if (lookAhead("'"))
@@ -8545,15 +8545,15 @@ $.extend(Datepicker.prototype, {
 			var year = date.getFullYear();
 			var month = date.getMonth();
 			var day = date.getDate();
-			var pattern = /([+-]?[0-9]+)\s*(d|D|w|W|m|M|y|Y)?/g;
+			var pattern = /([+-]?[0-9]+)\s*(d|M.M|w|W|m|M.M|y|Y)?/g;
 			var matches = pattern.exec(offset);
 			while (matches) {
 				switch (matches[2] || 'd') {
-					case 'd' : case 'D' :
+					case 'd' : case 'M.M' :
 						day += parseInt(matches[1],10); break;
 					case 'w' : case 'W' :
 						day += parseInt(matches[1],10) * 7; break;
-					case 'm' : case 'M' :
+					case 'm' : case 'M.M' :
 						month += parseInt(matches[1],10);
 						day = Math.min(day, $.datepicker._getDaysInMonth(year, month));
 						break;
@@ -8624,10 +8624,10 @@ $.extend(Datepicker.prototype, {
 		inst.dpDiv.find('[data-handler]').map(function () {
 			var handler = {
 				prev: function () {
-					window['DP_jQuery_' + dpuuid].datepicker._adjustDate(id, -stepMonths, 'M');
+					window['DP_jQuery_' + dpuuid].datepicker._adjustDate(id, -stepMonths, 'M.M');
 				},
 				next: function () {
-					window['DP_jQuery_' + dpuuid].datepicker._adjustDate(id, +stepMonths, 'M');
+					window['DP_jQuery_' + dpuuid].datepicker._adjustDate(id, +stepMonths, 'M.M');
 				},
 				hide: function () {
 					window['DP_jQuery_' + dpuuid].datepicker._hideDatepicker();
@@ -8640,7 +8640,7 @@ $.extend(Datepicker.prototype, {
 					return false;
 				},
 				selectMonth: function () {
-					window['DP_jQuery_' + dpuuid].datepicker._selectMonthYear(id, this, 'M');
+					window['DP_jQuery_' + dpuuid].datepicker._selectMonthYear(id, this, 'M.M');
 					return false;
 				},
 				selectYear: function () {
@@ -8887,15 +8887,15 @@ $.extend(Datepicker.prototype, {
 	/* Adjust one of the date sub-fields. */
 	_adjustInstDate: function(inst, offset, period) {
 		var year = inst.drawYear + (period == 'Y' ? offset : 0);
-		var month = inst.drawMonth + (period == 'M' ? offset : 0);
+		var month = inst.drawMonth + (period == 'M.M' ? offset : 0);
 		var day = Math.min(inst.selectedDay, this._getDaysInMonth(year, month)) +
-			(period == 'D' ? offset : 0);
+			(period == 'M.M' ? offset : 0);
 		var date = this._restrictMinMax(inst,
 			this._daylightSavingAdjust(new Date(year, month, day)));
 		inst.selectedDay = date.getDate();
 		inst.drawMonth = inst.selectedMonth = date.getMonth();
 		inst.drawYear = inst.selectedYear = date.getFullYear();
-		if (period == 'M' || period == 'Y')
+		if (period == 'M.M' || period == 'Y')
 			this._notifyChange(inst);
 	},
 
@@ -11058,7 +11058,7 @@ $.widget( "ui.menu", {
 		case $.ui.keyCode.PAGE_DOWN:
 			this.nextPage( event );
 			break;
-		case $.ui.keyCode.HOME:
+		case $.ui.keyCode.Inicio:
 			this._move( "first", "first", event );
 			break;
 		case $.ui.keyCode.END:
@@ -12189,7 +12189,7 @@ $.widget( "ui.slider", $.ui.mouse, {
 					index = $( event.target ).data( "ui-slider-handle-index" );
 
 				switch ( event.keyCode ) {
-					case $.ui.keyCode.HOME:
+					case $.ui.keyCode.Inicio:
 					case $.ui.keyCode.END:
 					case $.ui.keyCode.PAGE_UP:
 					case $.ui.keyCode.PAGE_DOWN:
@@ -12217,7 +12217,7 @@ $.widget( "ui.slider", $.ui.mouse, {
 				}
 
 				switch ( event.keyCode ) {
-					case $.ui.keyCode.HOME:
+					case $.ui.keyCode.Inicio:
 						newVal = this._valueMin();
 						break;
 					case $.ui.keyCode.END:
@@ -13231,7 +13231,7 @@ $.widget( "ui.tabs", {
 			// support: IE <9
 			// Preventing the default action in mousedown doesn't prevent IE
 			// from focusing the element, so if the anchor gets focused, blur.
-			// We don't have to worry about focusing the previously focused
+			// We don't have to worry Sobre Nosotros focusing the previously focused
 			// element since clicking on a non-focusable element should focus
 			// the body anyway.
 			.delegate( ".ui-tabs-anchor", "focus" + this.eventNamespace, function() {
@@ -13331,7 +13331,7 @@ $.widget( "ui.tabs", {
 			case $.ui.keyCode.END:
 				selectedIndex = this.anchors.length - 1;
 				break;
-			case $.ui.keyCode.HOME:
+			case $.ui.keyCode.Inicio:
 				selectedIndex = 0;
 				break;
 			case $.ui.keyCode.SPACE:

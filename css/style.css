@@ -1273,7 +1273,7 @@ p.head_para {
 		padding: 0;
 	}
 
-	a.b-home {
+	a.b-Inicio {
         background: #0c0c0c;
         padding: 0.7em 1.5em;
         display: inline-block;
@@ -1872,7 +1872,7 @@ p.head_para {
         padding-top: 2em;
         line-height:1.8em;
     }
-    .contact-map iframe {
+    .Contacto-map iframe {
         width: 100%;
         height: 300px;
     }
@@ -2062,7 +2062,7 @@ p.head_para {
     .social-nav li {
         margin: 0px 1px;
     }
-    .contact-map iframe {
+    .Contacto-map iframe {
         width: 100%;
         height: 200px;
     }

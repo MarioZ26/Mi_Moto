@@ -13,7 +13,7 @@ var Creditly = (function() {
     return getInputValue(e, selector).length > maximumLength;
   };
 
-  // Backspace, delete, tab, escape, enter, ., Ctrl+a, Ctrl+c, Ctrl+v, home, end, left, right
+  // Backspace, delete, tab, escape, enter, ., Ctrl+a, Ctrl+c, Ctrl+v, Inicio, end, left, right
   var isEscapedKeyStroke = function(e) {
     return ( $.inArray(e.which,[46,8,9,0,27,13,190]) !== -1 ||
       (e.which == 65 && e.ctrlKey === true) || 
@@ -174,9 +174,9 @@ var Creditly = (function() {
 
       var creditCard = function(selector, data) {
         var rawNumber = $(data["creditCardNumberSelector"]).val();
-        var number = $.trim(rawNumber).replace(/\D/g, "");
+        var number = $.trim(rawNumber).replace(/\M.M/g, "");
         var rawSecurityCode = $(data["cvvSelector"]).val();
-        var securityCode = $.trim(rawSecurityCode).replace(/\D/g, "");
+        var securityCode = $.trim(rawSecurityCode).replace(/\M.M/g, "");
         var messages = [];
         var isValid = true;
         var selectors = [];
