@@ -8,8 +8,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html lang="zxx">
 
 <head>
-	<title>Mi Moto an Ecommerce Category Bootstrap Responsive Website Template | Inicio :: w3layouts</title>
-	<!-- custom-theme -->
+	<title>Mi Moto an Ecommerce Category Bootstrap Responsive Website Template | Comprar :: w3layouts</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="Mi Moto Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -27,6 +26,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 	<link rel="stylesheet" href="css/shop.css" type="text/css" media="screen" property="" />
 	<link href="css/style7.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- Owl-carousel-CSS -->
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui1.css">
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- font-awesome-icons -->
 	<link href="css/font-awesome.css" rel="stylesheet">
@@ -38,11 +39,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <body>
 	<!-- banner -->
-	<div class="banner_top" id="Inicio">
+<div class="banner_top innerpage" id="Inicio">
 		<div class="wrapper_top_w3layouts">
-
 			<div class="header_agileits">
-				<div class="logo">
+				<div class="logo inner_page_log">
 					<h1><a class="navbar-brand" href="index.html"><span>Mi</span> <i>Moto</i></a></h1>
 				</div>
 				<div class="overlay overlay-contentpush">
@@ -53,7 +53,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li><a href="index.html" class="active">Inicio</a></li>
 							<li><a href="about.html">Sobre Nosotros</a></li>
 							<!-- <li><a href="404.html">Team</a></li> -->
-							<li><a href="shop.html">Comprar Ahora</a></li>
+							<li><a href="index.html">Comprar</a></li>
 							<li><a href="Contacto.html">Contacto</a></li>
 						</ul>
 					</nav>
@@ -70,160 +70,555 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<button class="top_shoe_cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
 						</form>
 					</div>
-
 				</div>
-				<!-- //cart details -->
-				<!-- search -->
-				<div class="search_w3ls_agileinfo">
-					<div class="cd-main-header">
-						<ul class="cd-header-buttons">
-							<li><a class="cd-search-trigger" href="#cd-search"> <span></span></a></li>
-						</ul>
-					</div>
-					<div id="cd-search" class="cd-search">
-						<form action="#" method="post">
-							<input name="Search" type="search" placeholder="Click enter after typing...">
-						</form>
-					</div>
-				</div>
-				<!-- //search -->
-
-				<div class="clearfix"></div>
 			</div>
-			<!-- /slider -->
-			<div class="slider">
-				<div class="callbacks_container">
-					<ul class="rslides callbacks callbacks1" id="slider4">
+		</div>
+		<!-- //cart details -->
+		<!-- search -->
+		<div class="search_w3ls_agileinfo">
+			<div class="cd-main-header">
+				<ul class="cd-header-buttons">
+					<li><a class="cd-search-trigger" href="#cd-search"> <span></span></a></li>
+				</ul>
+			</div>
+			<div id="cd-search" class="cd-search">
+				<form action="#" method="post">
+					<input name="Search" type="search" placeholder="Click enter after typing...">
+				</form>
+			</div>
+		</div>
+		<!-- //search -->
+		<div class="clearfix"></div>
+		<!-- /banner_inner -->
+		<div class="services-breadcrumb_w3ls_agileinfo">
+			<div class="inner_breadcrumb_agileits_w3">
 
+				<ul class="short">
+					<li><a href="index.html">Inicio</a><i>|</i></li>
+					<li>Comprar</li>
+				</ul>
+			</div>
+		</div>
+		<!-- //banner_inner -->
+	</div>
+
+	<!-- //banner -->
+	<!-- top Products -->
+	<div class="ads-grid_shop">
+		<div class="shop_inner_inf">
+			<!-- tittle heading -->
+
+			<!-- //tittle heading -->
+			<!-- product left -->
+			<div class="side-bar col-md-3">
+				<div class="search-hotel">
+					<h3 class="agileits-sear-head">Search Here..</h3>
+					<form action="#" method="post">
+						<input type="search" placeholder="Product name..." name="search" required="">
+						<input type="submit" value=" ">
+					</form>
+				</div>
+				<!-- price range -->
+				<div class="range">
+					<h3 class="agileits-sear-head">Price range</h3>
+					<ul class="dropdown-menu6">
 						<li>
-							<div class="banner-top2">
-								<div class="banner-info-wthree">
-									<h3>Nike</h3>
-									<p>See how good they feel.</p>
 
-								</div>
-
-							</div>
-						</li>
-						<li>
-							<div class="banner-top3">
-								<div class="banner-info-wthree">
-									<h3>Heels</h3>
-									<p>For All Walks of Life.</p>
-
-								</div>
-
-							</div>
-						</li>
-						<li>
-							<div class="banner-top">
-								<div class="banner-info-wthree">
-									<h3>Sneakers</h3>
-									<p>See how good they feel.</p>
-
-								</div>
-
-							</div>
-						</li>
-						<li>
-							<div class="banner-top1">
-								<div class="banner-info-wthree">
-									<h3>Adidas</h3>
-									<p>For All Walks of Life.</p>
-
-								</div>
-
-							</div>
+							<div id="slider-range"></div>
+							<input type="text" id="amount" style="border: 0; color: #ffffff; font-weight: normal;" />
 						</li>
 					</ul>
 				</div>
-				<div class="clearfix"> </div>
+				<!-- //price range -->
+				<!--preference -->
+				<div class="left-side">
+					<h3 class="agileits-sear-head">Occasion</h3>
+					<ul>
+						<li>
+							<input type="checkbox" class="checked">
+							<span class="span">Casuals</span>
+						</li>
+						<li>
+							<input type="checkbox" class="checked">
+							<span class="span">Party</span>
+						</li>
+						<li>
+							<input type="checkbox" class="checked">
+							<span class="span">Wedding</span>
+						</li>
+						<li>
+							<input type="checkbox" class="checked">
+							<span class="span">Ethnic</span>
+						</li>
+					</ul>
+				</div>
+				<!-- // preference -->
+				
+				
 			</div>
-			<!-- //slider -->
-			<ul class="top_icons">
-				<li><a href="#"><span class="fa fa-facebook" aria-hidden="true"></span></a></li>
-				<li><a href="#"><span class="fa fa-twitter" aria-hidden="true"></span></a></li>
-				<li><a href="#"><span class="fa fa-linkedin" aria-hidden="true"></span></a></li>
-				<li><a href="#"><span class="fa fa-google-plus" aria-hidden="true"></span></a></li>
+			<!-- //product left -->
+			<!-- product right -->
+			<div class="left-ads-display col-md-9">
+				<div class="wrapper_top_shop">
+					<!-- product-sec1 -->
+					<div class="product-sec1">
+						<!--/mens-->
+						<div class="col-md-4 product-men">
+							<div class="product-shoe-info shoe">
+								<div class="men-pro-item">
+									<div class="men-thumb-item">
+										<img src="images/Aceites/SAE10W40.jpg" alt="">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="single.html" class="link-product-add-cart">DETALLES</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+									</div>
+									<div class="item-info-product">
+										<h4>
+											<a href="single.html">Aceite SAE 10W40 para Motor 4 Tiempos - Botella de 1 Litro </a>
+										</h4>
+										<div class="info-product-price">
+											<div class="grid_meta">
+												<div class="product_price">
+													<div class="grid-price ">
+														<span class="money ">Q 150.00</span>
+													</div>
+												</div>
+												<ul class="stars">
+													<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
+												</ul>
+											</div>
+											<div class="shoe single-item hvr-outline-out">
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart">
+													<input type="hidden" name="add" value="1">
+													<input type="hidden" name="shoe_item" value="Aceite SAE 10W40 para Motor 4 Tiempos - Botella de 1 Litro">
+													<input type="hidden" name="amount" value="150.00">
+													<button type="submit" class="shoe-cart pshoe-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
 
-			</ul>
-		</div>
-	</div>
-	<!-- //banner -->
-	<!-- /girds_bottom-->
-	<div class="grids_bottom">
-		<div class="style-grids">
-			<div class="col-md-6 style-grid style-grid-1">
-				<img src="images/b1.jpg" alt="shoe">
-			</div>
-		</div>
-		<div class="col-md-6 style-grid style-grid-2">
-			<div class="style-image-1_info">
-				<div class="style-grid-2-text_info">
-					<h3>Nike DOWNSHIFTER</h3>
-					<p>Itaque earum rerum hic tenetur a sapiente delectus reiciendis maiores alias consequatur.sed quia non numquam eius modi
-						tempora incidunt ut labore et dolore .</p>
-					<div class="shop-button">
-						<a href="shop.html">Comprar</a>
-					</div>
-				</div>
-			</div>
-			<div class="style-image-2">
-				<img src="images/b2.jpg" alt="shoe">
-				<div class="style-grid-2-text">
-					<h3>Air force</h3>
-				</div>
-			</div>
-		</div>
-		<div class="clearfix"></div>
-	</div>
-	</div>
-	<!-- //grids_bottom-->
-	<!-- /girds_bottom2-->
-	<div class="grids_sec_2">
-		<div class="style-grids_main">
-			<div class="col-md-6 grids_sec_2_left">
-				<div class="grid_sec_info">
-					<div class="style-grid-2-text_info">
-						<h3>Sneakers</h3>
-						<p>Itaque earum rerum hic tenetur a sapiente delectus reiciendis maiores alias consequatur.sed quia non numquam eius modi
-							tempora incidunt ut labore .</p>
-						<div class="shop-button">
-							<a href="shop.html">Comprar</a>
-						</div>
-					</div>
-				</div>
-				<div class="style-image-2">
-					<img src="images/b4.jpg" alt="shoe">
-					<div class="style-grid-2-text">
-						<h3>Air force</h3>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6 grids_sec_2_left">
+													<a href="#" data-toggle="modal" data-target="#myModal1"></a>
+												</form>
 
-				<div class="style-image-2">
-					<img src="images/b3.jpg" alt="shoe">
-					<div class="style-grid-2-text">
-						<h3>Air force</h3>
-					</div>
-				</div>
-				<div class="grid_sec_info last">
-					<div class="style-grid-2-text_info">
-						<h3>Sneakers</h3>
-						<p>Itaque earum rerum hic tenetur a sapiente delectus reiciendis maiores alias consequatur.sed quia non numquam eius modi
-							tempora incidunt ut labore .</p>
-						<div class="shop-button two">
-							<a href="shop.html">Comprar</a>
+											</div>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
 						</div>
+						<div class="col-md-4 product-men">
+							<div class="product-shoe-info shoe">
+								<div class="men-pro-item">
+									<div class="men-thumb-item">
+										<img src="images/Aceites/510020W50.jpg" alt="">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="single.html" class="link-product-add-cart">DETALLES</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+									</div>
+									<div class="item-info-product">
+										<h4>
+											<a href="single.html">Aceite 5100 20W50 para Motor de 4T - 1 Litro </a>
+										</h4>
+										<div class="info-product-price">
+											<div class="grid_meta">
+												<div class="product_price">
+													<div class="grid-price ">
+														<span class="money ">Q100.00</span>
+													</div>
+												</div>
+												<ul class="stars">
+													<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
+												</ul>
+											</div>
+											<div class="shoe single-item hvr-outline-out">
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart">
+													<input type="hidden" name="add" value="1">
+													<input type="hidden" name="shoe_item" value="Aceite 5100 20W50 para Motor de 4T - 1 Litro">
+													<input type="hidden" name="amount" value="405.00">
+													<button type="submit" class="shoe-cart pshoe-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+
+													<a href="#" data-toggle="modal" data-target="#myModal1"></a>
+												</form>
+
+											</div>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 product-men">
+							<div class="product-shoe-info shoe">
+								<div class="men-pro-item">
+									<div class="men-thumb-item">
+										<img src="images/s3.jpg" alt="">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="single.html" class="link-product-add-cart">DETALLES</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+									</div>
+									<div class="item-info-product">
+										<h4>
+											<a href="single.html">(SRV) Sneakers </a>
+										</h4>
+										<div class="info-product-price">
+											<div class="grid_meta">
+												<div class="product_price">
+													<div class="grid-price ">
+														<span class="money ">$375.00</span>
+													</div>
+												</div>
+												<ul class="stars">
+													<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
+												</ul>
+											</div>
+											<div class="shoe single-item hvr-outline-out">
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart">
+													<input type="hidden" name="add" value="1">
+													<input type="hidden" name="shoe_item" value="(SRV) Sneakers">
+													<input type="hidden" name="amount" value="375.00">
+													<button type="submit" class="shoe-cart pshoe-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+
+													<a href="#" data-toggle="modal" data-target="#myModal1"></a>
+												</form>
+
+											</div>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //mens -->
+						<!-- /womens -->
+						<div class="col-md-4 product-men women_two">
+							<div class="product-shoe-info shoe">
+								<div class="men-pro-item">
+									<div class="men-thumb-item">
+										<img src="images/s4.jpg" alt="">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="single.html" class="link-product-add-cart">DETALLES</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+									</div>
+									<div class="item-info-product">
+										<h4>
+											<a href="single.html">Shuberry Heels </a>
+										</h4>
+										<div class="info-product-price">
+											<div class="grid_meta">
+												<div class="product_price">
+													<div class="grid-price ">
+														<span class="money ">$575.00</span>
+													</div>
+												</div>
+												<ul class="stars">
+													<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
+												</ul>
+											</div>
+											<div class="shoe single-item hvr-outline-out">
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart">
+													<input type="hidden" name="add" value="1">
+													<input type="hidden" name="shoe_item" value="Shuberry Heels">
+													<input type="hidden" name="amount" value="575.00">
+													<button type="submit" class="shoe-cart pshoe-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+
+													<a href="#" data-toggle="modal" data-target="#myModal1"></a>
+												</form>
+
+											</div>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 product-men women_two">
+							<div class="product-shoe-info shoe">
+								<div class="men-pro-item">
+									<div class="men-thumb-item">
+										<img src="images/s5.jpg" alt="">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="single.html" class="link-product-add-cart">DETALLES</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+									</div>
+									<div class="item-info-product">
+										<h4>
+											<a href="single.html">Red Bellies </a>
+										</h4>
+										<div class="info-product-price">
+											<div class="grid_meta">
+												<div class="product_price">
+													<div class="grid-price ">
+														<span class="money ">$325.00</span>
+													</div>
+												</div>
+												<ul class="stars">
+													<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
+												</ul>
+											</div>
+											<div class="shoe single-item hvr-outline-out">
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart">
+													<input type="hidden" name="add" value="1">
+													<input type="hidden" name="shoe_item" value="Red Bellies">
+													<input type="hidden" name="amount" value="325.00">
+													<button type="submit" class="shoe-cart pshoe-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+
+													<a href="#" data-toggle="modal" data-target="#myModal1"></a>
+												</form>
+
+											</div>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 product-men women_two">
+							<div class="product-shoe-info shoe">
+								<div class="men-pro-item">
+									<div class="men-thumb-item">
+										<img src="images/s6.jpg" alt="">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="single.html" class="link-product-add-cart">DETALLES</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+									</div>
+									<div class="item-info-product">
+										<h4>
+											<a href="single.html">Catwalk Flats</a>
+										</h4>
+										<div class="info-product-price">
+											<div class="grid_meta">
+												<div class="product_price">
+													<div class="grid-price ">
+														<span class="money ">$425.00</span>
+													</div>
+												</div>
+												<ul class="stars">
+													<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
+												</ul>
+											</div>
+											<div class="shoe single-item hvr-outline-out">
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart">
+													<input type="hidden" name="add" value="1">
+													<input type="hidden" name="shoe_item" value="Catwalk Flats">
+													<input type="hidden" name="amount" value="425.00">
+													<button type="submit" class="shoe-cart pshoe-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+
+													<a href="#" data-toggle="modal" data-target="#myModal1"></a>
+												</form>
+
+											</div>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //womens -->
+						<!-- /mens -->
+						<div class="col-md-4 product-men">
+							<div class="product-shoe-info shoe">
+								<div class="men-pro-item">
+									<div class="men-thumb-item">
+										<img src="images/s7.jpg" alt="">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="single.html" class="link-product-add-cart">DETALLES</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+									</div>
+									<div class="item-info-product">
+										<h4>
+											<a href="single.html">Running Moto</a>
+										</h4>
+										<div class="info-product-price">
+											<div class="grid_meta">
+												<div class="product_price">
+													<div class="grid-price ">
+														<span class="money ">$875.00</span>
+													</div>
+												</div>
+												<ul class="stars">
+													<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
+												</ul>
+											</div>
+											<div class="shoe single-item hvr-outline-out">
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart">
+													<input type="hidden" name="add" value="1">
+													<input type="hidden" name="shoe_item" value="Running Moto">
+													<input type="hidden" name="amount" value="875.00">
+													<button type="submit" class="shoe-cart pshoe-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+
+													<a href="#" data-toggle="modal" data-target="#myModal1"></a>
+												</form>
+
+											</div>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 product-men">
+							<div class="product-shoe-info shoe">
+								<div class="men-pro-item">
+									<div class="men-thumb-item">
+										<img src="images/s8.jpg" alt="">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="single.html" class="link-product-add-cart">DETALLES</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+									</div>
+									<div class="item-info-product">
+										<h4>
+											<a href="single.html">Sukun Casuals</a>
+										</h4>
+										<div class="info-product-price">
+											<div class="grid_meta">
+												<div class="product_price">
+													<div class="grid-price ">
+														<span class="money ">$505.00</span>
+													</div>
+												</div>
+												<ul class="stars">
+													<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
+												</ul>
+											</div>
+											<div class="shoe single-item hvr-outline-out">
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart">
+													<input type="hidden" name="add" value="1">
+													<input type="hidden" name="shoe_item" value="Sukun Casuals">
+													<input type="hidden" name="amount" value="505.00">
+													<button type="submit" class="shoe-cart pshoe-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+
+													<a href="#" data-toggle="modal" data-target="#myModal1"></a>
+												</form>
+
+											</div>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 product-men">
+							<div class="product-shoe-info shoe">
+								<div class="men-pro-item">
+									<div class="men-thumb-item">
+										<img src="images/s9.jpg" alt="">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="single.html" class="link-product-add-cart">DETALLES</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+									</div>
+									<div class="item-info-product">
+										<h4>
+											<a href="single.html">Bank Sneakers</a>
+										</h4>
+										<div class="info-product-price">
+											<div class="grid_meta">
+												<div class="product_price">
+													<div class="grid-price ">
+														<span class="money ">$635.00</span>
+													</div>
+												</div>
+												<ul class="stars">
+													<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+													<li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
+												</ul>
+											</div>
+											<div class="shoe single-item hvr-outline-out">
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart">
+													<input type="hidden" name="add" value="1">
+													<input type="hidden" name="shoe_item" value="Bank Sneakers">
+													<input type="hidden" name="amount" value="635.00">
+													<button type="submit" class="shoe-cart pshoe-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+
+													<a href="#" data-toggle="modal" data-target="#myModal1"></a>
+												</form>
+
+											</div>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //mens -->
+						<div class="clearfix"></div>
+
 					</div>
+
 				</div>
 			</div>
 			<div class="clearfix"></div>
 		</div>
 	</div>
-	<!-- //grids_bottom2-->
-	<!-- /Properties -->
+	<!-- //top products -->
 	<div class="mid_slider_w3lsagile">
 		<div class="col-md-3 mid_slider_text">
 			<h5>Some More Moto</h5>
@@ -232,13 +627,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
 				<!-- Indicators -->
 				<ol class="carousel-indicators">
-					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#myCarousel" data-slide-to="1" class=""></li>
+					<li data-target="#myCarousel" data-slide-to="0" class=""></li>
+					<li data-target="#myCarousel" data-slide-to="1" class="active"></li>
 					<li data-target="#myCarousel" data-slide-to="2" class=""></li>
 					<li data-target="#myCarousel" data-slide-to="3" class=""></li>
 				</ol>
 				<div class="carousel-inner" role="listbox">
-					<div class="item active">
+					<div class="item">
 						<div class="row">
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
 								<div class="thumbnail"><img src="images/g1.jpg" alt="Image" style="max-width:100%;"></div>
@@ -254,7 +649,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 						</div>
 					</div>
-					<div class="item">
+					<div class="item active">
 						<div class="row">
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
 								<div class="thumbnail"><img src="images/g5.jpg" alt="Image" style="max-width:100%;"></div>
@@ -318,8 +713,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 		<div class="clearfix"> </div>
 	</div>
-	<!--//banner -->
-
 	<!-- /newsletter-->
 	<div class="newsletter_w3layouts_agile">
 		<div class="col-sm-6 newsleft">
@@ -418,26 +811,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 						</div>
 					</div>
-					
+				
 					<div class="clearfix"></div>
 				</div>
 			</div>
 			<div class="clearfix"></div>
 
-			<p class="copy-right-w3ls-agileits">&copy 2018 Mi Moto. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+			<p class="copy-right-w3ls-agileits">&copy 2018 Mi Moto. All rights reserved | Design by <a href="http://w3layouts.com/">w3layouts</a></p>
 		</div>
 	</div>
 	</div>
 	<!-- //footer -->
-    <a href="#Inicio" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<a href="#Inicio" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 	<!-- js -->
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<!-- //js -->
-	<!-- /nav -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<script src="js/classie.js"></script>
-	<script src="js/demo1.js"></script>
-	<!-- //nav -->
 	<!-- cart-js -->
 	<script src="js/minicart.js"></script>
 	<script>
@@ -454,28 +842,34 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		});
 	</script>
 	<!-- //cart-js -->
+	<!-- /nav -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/demo1.js"></script>
+	<!-- //nav -->
 	<!--search-bar-->
 	<script src="js/search.js"></script>
 	<!--//search-bar-->
-	<script src="js/responsiveslides.min.js"></script>
+	<!-- price range (top products) -->
+	<script src="js/jquery-ui.js"></script>
 	<script>
-		$(function () {
-			$("#slider4").responsiveSlides({
-				auto: true,
-				pager: true,
-				nav: true,
-				speed: 1000,
-				namespace: "callbacks",
-				before: function () {
-					$('.events').append("<li>before event fired.</li>");
-				},
-				after: function () {
-					$('.events').append("<li>after event fired.</li>");
+		//<![CDATA[ 
+		$(window).load(function () {
+			$("#slider-range").slider({
+				range: true,
+				min: 0,
+				max: 9000,
+				values: [50, 6000],
+				slide: function (event, ui) {
+					$("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
 				}
 			});
-		});
+			$("#amount").val("$" + $("#slider-range").slider("values", 0) + " - $" + $("#slider-range").slider("values", 1));
+
+		}); //]]>
 	</script>
-	<!-- js for portfolio lightbox -->
+	<!-- //price range (top products) -->
+
 	<!-- start-smoth-scrolling -->
 	<script type="text/javascript" src="js/move-top.js"></script>
 	<script type="text/javascript" src="js/easing.js"></script>
@@ -490,7 +884,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		});
 	</script>
 	<!-- //end-smoth-scrolling -->
-
 	<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
 
 
